@@ -1,0 +1,46 @@
+body, html {
+	margin: 0;
+}
+
+.container {
+	height: 100vh;
+}
+
+.grid {
+	display: grid;
+	height: 100%;
+	grid-template-columns: 1fr;
+	grid-auto-rows: 5% 90% 5%;
+	//grid-gap: 10px;
+
+}
+
+.grid .item:nth-child(even) {
+	background: rgba(216, 211, 210, 0.6);
+}
+
+.grid .item:nth-child(odd) {
+	background: gray;
+}
+
+.flex-container {
+	display: flex;
+	height: 100%;
+	justify-content: space-around;
+	align-items: stretch;
+	text-align: center;
+}
+
+.flex-container .item {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+}
+
+.flex-container .item:nth-child(even) {
+	background: red;
+}
+
+.flex-container .item:nth-child(odd) {
+	background: gray;
+}
